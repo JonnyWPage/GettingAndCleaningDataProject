@@ -43,7 +43,7 @@ tot_df <- tbl_df(tot_df)
 # use group_by() to group by activity labels and subjects
 by_activity <- group_by(tot_df,activity,subject)
 
-# use summarise(mean()) to get the means of each activity
+# use summarise_each() to get the means of each activity
 averaged <- summarise_each(by_activity,funs(mean))
 
 # averaged can then be output to TidyData.txt using write.table
