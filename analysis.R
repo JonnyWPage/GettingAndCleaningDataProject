@@ -1,6 +1,6 @@
 # Load in relevant datasets
 library(dplyr)
-setwd("C:/Users/jonny/Documents/Coursera/projectData")
+setwd("C:/Users/Flight Group/Documents/RProject/UCI HAR Dataset")
 
 activity_labels = read.table("./activity_labels.txt")
 train_set = read.table("./train/X_train.txt")
@@ -47,3 +47,4 @@ by_activity <- group_by(tot_df,activity,subject)
 averaged <- summarise_each(by_activity,funs(mean))
 
 # averaged can then be output to TidyData.txt using write.table
+write.table(averaged,"./TidyData.txt",row.names=FALSE)
