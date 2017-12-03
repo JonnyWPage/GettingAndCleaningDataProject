@@ -9,3 +9,5 @@ analysis.R performs the following functions on the raw data to output TidyData.t
 * Converts the numeric activity labels to more informative labels
 * Groups by the activity labels and subjects
 * Provides the mean of each variable grouped by activity and subject
+
+## Please note that the data of both the train and test datasets cannot be uploaded due to their size.  Please get in contact if you would like me to send it through to you.
